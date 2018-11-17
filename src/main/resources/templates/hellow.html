@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <span th:text="${msg}"></span>
+    <hr>
+    <input type = "text" name="username" th:value="${msg}"></input>
+    <hr>
+    <span th:text="${#strings.isEmpty(msg)}"></span>
+</body>
+</html>

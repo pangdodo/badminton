@@ -1,0 +1,444 @@
+Adding PropertySource 'configurationProperties' with highest search precedence
+Adding PropertySource 'servletConfigInitParams' with lowest search precedence
+Adding PropertySource 'servletContextInitParams' with lowest search precedence
+Adding PropertySource 'systemProperties' with lowest search precedence
+Adding PropertySource 'systemEnvironment' with lowest search precedence
+Initialized StandardServletEnvironment with PropertySources [StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, MapPropertySource {name='systemProperties'}, SystemEnvironmentPropertySource {name='systemEnvironment'}]
+Starting BadmintonApplication on XXGS-周庆 with PID 14500 (E:\eclipse-workspace\badminton\target\classes started by Administrator in E:\eclipse-workspace\badminton)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Mon Nov 05 18:41:34 CST 2018]; root of context hierarchy
+No MyBatis mapper was found in '[com.badminton]' package. Please check your configuration.
+Removing PropertySource 'defaultProperties'
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec52de0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.34
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Java/jre1.8.0_151/bin/server;C:/Java/jre1.8.0_151/bin;C:/Java/jre1.8.0_151/lib/amd64;D:\oracle\product\10.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;C:\Program Files (x86)\WinRAR;C:\Java\jdk1.8.0_151\bin;;D:\eclipse\jee-2018-09\eclipse;;.]
+Initializing Spring embedded WebApplicationContext
+Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+Root WebApplicationContext: initialization completed in 6249 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Replacing PropertySource 'servletContextInitParams' with 'servletContextInitParams'
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Mon Nov 05 18:41:34 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Looking for request mappings in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Mon Nov 05 18:41:34 CST 2018]; root of context hierarchy
+1 request handler methods found on class com.badminton.controller.HelloController: {public java.lang.String com.badminton.controller.HelloController.say()={[/hello],methods=[GET]}}
+Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.badminton.controller.HelloController.say()
+2 request handler methods found on class com.badminton.controller.LoginController: {public java.lang.String com.badminton.controller.LoginController.index(org.springframework.ui.Model)={[/]}, public java.lang.String com.badminton.controller.LoginController.show(org.springframework.ui.Model)={[/show]}}
+Mapped "{[/]}" onto public java.lang.String com.badminton.controller.LoginController.index(org.springframework.ui.Model)
+Mapped "{[/show]}" onto public java.lang.String com.badminton.controller.LoginController.show(org.springframework.ui.Model)
+7 request handler methods found on class com.badminton.controller.UserController: {public com.badminton.domain.User com.badminton.controller.UserController.addUser(java.lang.String,java.lang.Integer)={[/users],methods=[POST]}, public java.util.List com.badminton.controller.UserController.getUserList()={[/users],methods=[GET]}, public com.badminton.domain.Result com.badminton.controller.UserController.addUser2(com.badminton.domain.User,org.springframework.validation.BindingResult)={[/users2],methods=[POST]}, public com.badminton.domain.User com.badminton.controller.UserController.userFindOne(java.lang.Integer)={[/user/{id}],methods=[GET]}, public com.badminton.domain.User com.badminton.controller.UserController.userUpdate(java.lang.Integer,java.lang.String,java.lang.Integer)={[/user/{id}],methods=[PUT]}, public void com.badminton.controller.UserController.deleteUser(java.lang.Integer)={[/user/{id}],methods=[DELETE]}, public void com.badminton.controller.UserController.getAge(java.lang.Integer)={[/users/getAge/{id}],methods=[GET]}}
+Mapped "{[/users],methods=[POST]}" onto public com.badminton.domain.User com.badminton.controller.UserController.addUser(java.lang.String,java.lang.Integer)
+Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.badminton.domain.User> com.badminton.controller.UserController.getUserList()
+Mapped "{[/users2],methods=[POST]}" onto public com.badminton.domain.Result<com.badminton.domain.User> com.badminton.controller.UserController.addUser2(com.badminton.domain.User,org.springframework.validation.BindingResult)
+Mapped "{[/user/{id}],methods=[GET]}" onto public com.badminton.domain.User com.badminton.controller.UserController.userFindOne(java.lang.Integer)
+Mapped "{[/user/{id}],methods=[PUT]}" onto public com.badminton.domain.User com.badminton.controller.UserController.userUpdate(java.lang.Integer,java.lang.String,java.lang.Integer)
+Mapped "{[/user/{id}],methods=[DELETE]}" onto public void com.badminton.controller.UserController.deleteUser(java.lang.Integer)
+Mapped "{[/users/getAge/{id}],methods=[GET]}" onto public void com.badminton.controller.UserController.getAge(java.lang.Integer)
+2 request handler methods found on class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}}
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Looking for URL mappings in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Mon Nov 05 18:41:34 CST 2018]; root of context hierarchy
+Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+Rejected bean name 'badmintonApplication': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': no URL paths identified
+Rejected bean name 'httpAspect': no URL paths identified
+Rejected bean name 'helloController': no URL paths identified
+Rejected bean name 'loginController': no URL paths identified
+Rejected bean name 'userController': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat': no URL paths identified
+Rejected bean name 'tomcatServletWebServerFactory': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration': no URL paths identified
+Rejected bean name 'servletWebServerFactoryCustomizer': no URL paths identified
+Rejected bean name 'tomcatServletWebServerFactoryCustomizer': no URL paths identified
+Rejected bean name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+Rejected bean name 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata': no URL paths identified
+Rejected bean name 'webServerFactoryCustomizerBeanPostProcessor': no URL paths identified
+Rejected bean name 'errorPageRegistrarBeanPostProcessor': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+Rejected bean name 'dispatcherServlet': no URL paths identified
+Rejected bean name 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': no URL paths identified
+Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration': no URL paths identified
+Rejected bean name 'defaultValidator': no URL paths identified
+Rejected bean name 'methodValidationPostProcessor': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+Rejected bean name 'error': no URL paths identified
+Rejected bean name 'beanNameViewResolver': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration': no URL paths identified
+Rejected bean name 'conventionErrorViewResolver': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': no URL paths identified
+Rejected bean name 'errorAttributes': no URL paths identified
+Rejected bean name 'basicErrorController': no URL paths identified
+Rejected bean name 'errorPageCustomizer': no URL paths identified
+Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+Rejected bean name 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+Rejected bean name 'faviconHandlerMapping': no URL paths identified
+Rejected bean name 'faviconRequestHandler': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+Rejected bean name 'mvcConversionService': no URL paths identified
+Rejected bean name 'mvcValidator': no URL paths identified
+Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+Rejected bean name 'mvcPathMatcher': no URL paths identified
+Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+Rejected bean name 'resourceHandlerMapping': no URL paths identified
+Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+Rejected bean name 'handlerExceptionResolver': no URL paths identified
+Rejected bean name 'mvcViewResolver': no URL paths identified
+Rejected bean name 'mvcHandlerMappingIntrospector': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+Rejected bean name 'defaultViewResolver': no URL paths identified
+Rejected bean name 'viewResolver': no URL paths identified
+Rejected bean name 'welcomePageHandlerMapping': no URL paths identified
+Rejected bean name 'requestContextFilter': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration': no URL paths identified
+Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified
+Rejected bean name 'spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari': no URL paths identified
+Rejected bean name 'dataSource': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration': no URL paths identified
+Rejected bean name 'hikariPoolDataSourceMetadataProvider': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializationConfiguration': no URL paths identified
+Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+Rejected bean name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': no URL paths identified
+Rejected bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration': no URL paths identified
+Rejected bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': no URL paths identified
+Rejected bean name 'sqlSessionFactory': no URL paths identified
+Rejected bean name 'sqlSessionTemplate': no URL paths identified
+Rejected bean name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+Rejected bean name 'mbeanExporter': no URL paths identified
+Rejected bean name 'objectNamingStrategy': no URL paths identified
+Rejected bean name 'mbeanServer': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$CglibAutoProxyConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration': no URL paths identified
+Rejected bean name 'openEntityManagerInViewInterceptor': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': no URL paths identified
+Rejected bean name 'transactionManager': no URL paths identified
+Rejected bean name 'jpaVendorAdapter': no URL paths identified
+Rejected bean name 'entityManagerFactoryBuilder': no URL paths identified
+Rejected bean name 'entityManagerFactory': no URL paths identified
+Rejected bean name 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties': no URL paths identified
+Rejected bean name 'dataSourceInitializedPublisher': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration': no URL paths identified
+Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified
+Rejected bean name 'jpaMappingContext': no URL paths identified
+Rejected bean name 'jpaContext': no URL paths identified
+Rejected bean name 'userRepository': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration': no URL paths identified
+Rejected bean name 'standardJacksonObjectMapperBuilderCustomizer': no URL paths identified
+Rejected bean name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration': no URL paths identified
+Rejected bean name 'parameterNamesModule': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+Rejected bean name 'jacksonObjectMapper': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+Rejected bean name 'jsonComponentModule': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+Rejected bean name 'spring.http.encoding-org.springframework.boot.autoconfigure.http.HttpEncodingProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration': no URL paths identified
+Rejected bean name 'messageConverters': no URL paths identified
+Rejected bean name 'org.springframework.data.web.config.ProjectingArgumentResolverRegistrar': no URL paths identified
+Rejected bean name 'projectingArgumentResolverBeanPostProcessor': no URL paths identified
+Rejected bean name 'org.springframework.data.web.config.SpringDataWebConfiguration': no URL paths identified
+Rejected bean name 'pageableResolver': no URL paths identified
+Rejected bean name 'sortResolver': no URL paths identified
+Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified
+Rejected bean name 'jacksonGeoModule': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration': no URL paths identified
+Rejected bean name 'pageableCustomizer': no URL paths identified
+Rejected bean name 'sortCustomizer': no URL paths identified
+Rejected bean name 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration': no URL paths identified
+Rejected bean name 'jacksonCodecCustomizer': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration': no URL paths identified
+Rejected bean name 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': no URL paths identified
+Rejected bean name 'jdbcTemplate': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$NamedParameterJdbcTemplateConfiguration': no URL paths identified
+Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration': no URL paths identified
+Rejected bean name 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafJava8TimeDialect': no URL paths identified
+Rejected bean name 'java8TimeDialect': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafWebMvcConfiguration$ThymeleafViewResolverConfiguration': no URL paths identified
+Rejected bean name 'thymeleafViewResolver': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafWebMvcConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafDefaultConfiguration': no URL paths identified
+Rejected bean name 'templateEngine': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration': no URL paths identified
+Rejected bean name 'defaultTemplateResolver': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration': no URL paths identified
+Rejected bean name 'spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+Rejected bean name 'transactionAttributeSource': no URL paths identified
+Rejected bean name 'transactionInterceptor': no URL paths identified
+Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration': no URL paths identified
+Rejected bean name 'transactionTemplate': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+Rejected bean name 'platformTransactionManagerCustomizers': no URL paths identified
+Rejected bean name 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration': no URL paths identified
+Rejected bean name 'restTemplateBuilder': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration': no URL paths identified
+Rejected bean name 'tomcatWebServerFactoryCustomizer': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration': no URL paths identified
+Rejected bean name 'characterEncodingFilter': no URL paths identified
+Rejected bean name 'localeCharsetMappingsCustomizer': no URL paths identified
+Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration': no URL paths identified
+Rejected bean name 'multipartConfigElement': no URL paths identified
+Rejected bean name 'multipartResolver': no URL paths identified
+Rejected bean name 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties': no URL paths identified
+Rejected bean name 'org.springframework.orm.jpa.SharedEntityManagerCreator#0': no URL paths identified
+Rejected bean name 'autoConfigurationReport': no URL paths identified
+Rejected bean name 'org.springframework.boot.context.ContextIdApplicationContextInitializer$ContextId': no URL paths identified
+Rejected bean name 'springApplicationArguments': no URL paths identified
+Rejected bean name 'springBootBanner': no URL paths identified
+Rejected bean name 'springBootLoggingSystem': no URL paths identified
+Rejected bean name 'environment': no URL paths identified
+Rejected bean name 'systemProperties': no URL paths identified
+Rejected bean name 'systemEnvironment': no URL paths identified
+Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+Rejected bean name 'messageSource': no URL paths identified
+Rejected bean name 'applicationEventMulticaster': no URL paths identified
+Rejected bean name 'servletContext': no URL paths identified
+Rejected bean name 'contextParameters': no URL paths identified
+Rejected bean name 'contextAttributes': no URL paths identified
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for exception mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Mon Nov 05 18:41:34 CST 2018]; root of context hierarchy
+[THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+Adding welcome page template: index
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Looking for resource handler mappings
+Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@53a301f3]
+Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7cf8f45a]
+Found resource handler mapping: URL pattern="/**", locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@62cf6a84]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path ''
+Adding PropertySource 'server.ports' with highest search precedence
+Started BadmintonApplication in 14.725 seconds (JVM running for 15.703)
+Initializing servlet 'dispatcherServlet'
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@72af90e8]
+Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@4cf18813]
+Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@37418b4]
+Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@641938e3]
+Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@59b036d3]
+Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+Servlet 'dispatcherServlet' configured successfully
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/show]
+Looking up handler method for path /show
+Returning handler method [public java.lang.String com.badminton.controller.LoginController.show(org.springframework.ui.Model)]
+Last-Modified value for [/show] is: -1
+Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+No matching bean found for view name '/hellow'
+Returning [org.thymeleaf.spring5.view.ThymeleafView@14a1344d] based on requested media type 'text/html'
+Rendering view [org.thymeleaf.spring5.view.ThymeleafView@14a1344d] in DispatcherServlet with name 'dispatcherServlet'
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/]
+Looking up handler method for path /
+Returning handler method [public java.lang.String com.badminton.controller.LoginController.index(org.springframework.ui.Model)]
+Last-Modified value for [/] is: -1
+Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+No matching bean found for view name '/index'
+Returning [org.thymeleaf.spring5.view.ThymeleafView@3a37b40] based on requested media type 'text/html'
+Rendering view [org.thymeleaf.spring5.view.ThymeleafView@3a37b40] in DispatcherServlet with name 'dispatcherServlet'
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/webjars/jquery/3.1.1/jquery.min.js]
+Looking up handler method for path /webjars/jquery/3.1.1/jquery.min.js
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/webjars/bootstrap/3.3.5/css/bootstrap.min.css]
+Looking up handler method for path /webjars/bootstrap/3.3.5/css/bootstrap.min.css
+Did not find handler method for [/webjars/bootstrap/3.3.5/css/bootstrap.min.css]
+Matching patterns for request [/webjars/bootstrap/3.3.5/css/bootstrap.min.css] are [/webjars/**, /**]
+URI Template variables for request [/webjars/bootstrap/3.3.5/css/bootstrap.min.css] are {}
+Did not find handler method for [/webjars/jquery/3.1.1/jquery.min.js]
+Matching patterns for request [/webjars/jquery/3.1.1/jquery.min.js] are [/webjars/**, /**]
+Mapping [/webjars/bootstrap/3.3.5/css/bootstrap.min.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7cf8f45a]]] and 1 interceptor
+URI Template variables for request [/webjars/jquery/3.1.1/jquery.min.js] are {}
+Mapping [/webjars/jquery/3.1.1/jquery.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7cf8f45a]]] and 1 interceptor
+Last-Modified value for [/webjars/bootstrap/3.3.5/css/bootstrap.min.css] is: -1
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/webjars/bootstrap/3.3.5/js/bootstrap.min.js]
+Looking up handler method for path /webjars/bootstrap/3.3.5/js/bootstrap.min.js
+Did not find handler method for [/webjars/bootstrap/3.3.5/js/bootstrap.min.js]
+Matching patterns for request [/webjars/bootstrap/3.3.5/js/bootstrap.min.js] are [/webjars/**, /**]
+URI Template variables for request [/webjars/bootstrap/3.3.5/js/bootstrap.min.js] are {}
+Mapping [/webjars/bootstrap/3.3.5/js/bootstrap.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7cf8f45a]]] and 1 interceptor
+Last-Modified value for [/webjars/bootstrap/3.3.5/js/bootstrap.min.js] is: -1
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+Last-Modified value for [/webjars/jquery/3.1.1/jquery.min.js] is: -1
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+Looking up handler method for path /error
+Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+Last-Modified value for [/error] is: -1
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Bootstrap/ace/js/ace-extra.min.js]
+Looking up handler method for path /Bootstrap/ace/js/ace-extra.min.js
+Did not find handler method for [/Bootstrap/ace/js/ace-extra.min.js]
+Matching patterns for request [/Bootstrap/ace/js/ace-extra.min.js] are [/**]
+URI Template variables for request [/Bootstrap/ace/js/ace-extra.min.js] are {}
+Mapping [/Bootstrap/ace/js/ace-extra.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@62cf6a84]]] and 1 interceptor
+Last-Modified value for [/Bootstrap/ace/js/ace-extra.min.js] is: -1
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+Looking up handler method for path /error
+Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+Last-Modified value for [/error] is: -1
+Written [{timestamp=Mon Nov 05 18:41:57 CST 2018, status=404, error=Not Found, message=No message available, path=/webjars/jquery/3.1.1/jquery.min.js}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@72fbf94d]
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+Written [{timestamp=Mon Nov 05 18:41:57 CST 2018, status=404, error=Not Found, message=No message available, path=/Bootstrap/ace/js/ace-extra.min.js}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@72fbf94d]
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Bootstrap/ace/js/ace.min.js]
+Looking up handler method for path /Bootstrap/ace/js/ace.min.js
+Did not find handler method for [/Bootstrap/ace/js/ace.min.js]
+Matching patterns for request [/Bootstrap/ace/js/ace.min.js] are [/**]
+URI Template variables for request [/Bootstrap/ace/js/ace.min.js] are {}
+Mapping [/Bootstrap/ace/js/ace.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@62cf6a84]]] and 1 interceptor
+Last-Modified value for [/Bootstrap/ace/js/ace.min.js] is: -1
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+Looking up handler method for path /error
+Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+Last-Modified value for [/error] is: -1
+Written [{timestamp=Mon Nov 05 18:41:57 CST 2018, status=404, error=Not Found, message=No message available, path=/Bootstrap/ace/js/ace.min.js}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@72fbf94d]
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Content/ace/avatars/avatar2.png]
+Looking up handler method for path /Content/ace/avatars/avatar2.png
+Did not find handler method for [/Content/ace/avatars/avatar2.png]
+Matching patterns for request [/Content/ace/avatars/avatar2.png] are [/**]
+URI Template variables for request [/Content/ace/avatars/avatar2.png] are {}
+Mapping [/Content/ace/avatars/avatar2.png] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@62cf6a84]]] and 1 interceptor
+Last-Modified value for [/Content/ace/avatars/avatar2.png] is: -1
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+Looking up handler method for path /error
+Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+Last-Modified value for [/error] is: -1
+Written [{timestamp=Mon Nov 05 18:41:57 CST 2018, status=404, error=Not Found, message=No message available, path=/Content/ace/avatars/avatar2.png}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@72fbf94d]
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Bootstrap/ace/js/ace-extra.min.js]
+Looking up handler method for path /Bootstrap/ace/js/ace-extra.min.js
+Did not find handler method for [/Bootstrap/ace/js/ace-extra.min.js]
+Matching patterns for request [/Bootstrap/ace/js/ace-extra.min.js] are [/**]
+URI Template variables for request [/Bootstrap/ace/js/ace-extra.min.js] are {}
+Mapping [/Bootstrap/ace/js/ace-extra.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@62cf6a84]]] and 1 interceptor
+Last-Modified value for [/Bootstrap/ace/js/ace-extra.min.js] is: -1
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+Looking up handler method for path /error
+Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+Last-Modified value for [/error] is: -1
+Written [{timestamp=Mon Nov 05 18:41:57 CST 2018, status=404, error=Not Found, message=No message available, path=/Bootstrap/ace/js/ace-extra.min.js}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@72fbf94d]
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/Bootstrap/ace/js/ace.min.js]
+Looking up handler method for path /Bootstrap/ace/js/ace.min.js
+Did not find handler method for [/Bootstrap/ace/js/ace.min.js]
+Matching patterns for request [/Bootstrap/ace/js/ace.min.js] are [/**]
+URI Template variables for request [/Bootstrap/ace/js/ace.min.js] are {}
+Mapping [/Bootstrap/ace/js/ace.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@62cf6a84]]] and 1 interceptor
+Last-Modified value for [/Bootstrap/ace/js/ace.min.js] is: -1
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+Looking up handler method for path /error
+Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+Last-Modified value for [/error] is: -1
+Written [{timestamp=Mon Nov 05 18:41:57 CST 2018, status=404, error=Not Found, message=No message available, path=/Bootstrap/ace/js/ace.min.js}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@72fbf94d]
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
+DispatcherServlet with name 'dispatcherServlet' processing GET request for [/users]
+Looking up handler method for path /users
+Returning handler method [public java.util.List<com.badminton.domain.User> com.badminton.controller.UserController.getUserList()]
+Last-Modified value for [/users] is: -1
+url=http://localhost:8080/users
+method = GET
+ip = 0:0:0:0:0:0:0:1
+class_method = com.badminton.controller.UserController.getUserList
+args={}
+后面拦截了**********************
+response=[User(id=1, username=张三, age=15), User(id=2, username=李四, age=30), User(id=3, username=王五, age=28), User(id=7, username=断了, age=233), User(id=8, username=要假期, age=25), User(id=9, username=断了, age=233), User(id=12, username=测试保存, age=22)]
+Written [[User(id=1, username=张三, age=15), User(id=2, username=李四, age=30), User(id=3, username=王五, age=28), User(id=7, username=断了, age=233), User(id=8, username=要假期, age=25), User(id=9, username=断了, age=233), User(id=12, username=测试保存, age=22)]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@72fbf94d]
+Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+Successfully completed request
